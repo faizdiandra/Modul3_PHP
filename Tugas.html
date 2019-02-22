@@ -1,0 +1,57 @@
+<head>
+    <style>
+    .float{
+        width: 350px;
+	    margin: 80px auto;
+	    padding: 30px 20px;
+    }
+    .full{
+        background-color: aquamarine;
+        font-family: "Ravie";
+        color: cadetblue;
+    }
+    .input{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px;
+        font-size: 20pt;
+    }
+    .button{
+        background: cadetblue;
+	    color: white;
+	    font-size: 11pt;
+	    width: 100%;
+	    border: none;
+	    border-radius: 3px;
+	    padding: 10px 20px;
+    }
+    </style>
+    <script>
+    function Login(){
+    var Email = parseFloat(document.Form.E.value);
+    var Pass = parseFloat(document.Form.P.value);
+    if(Email == 'FaizDiandra11@gmail.com' && Pass == 'bigcincin'){
+        document.write("Login Berhasil");
+    }
+    else{
+        document.write("Password Salah");
+    }
+    }
+    </script>
+</head>
+<body>
+    <div class="full">
+    <div class="float">
+        <fieldset>
+            <legend><h1><b>Login</b></h1></legend>
+    <form name="Form" action="Tugas.php">
+        <input type="text" name="E" placeholder="Email" class="input">
+        <br>
+        <input type="text hidden" name="P" placeholder="Password" class="input">
+        <br>
+        <input type="button" value="Login" onclick="Login()" class="button">
+    </form>
+        </fieldset>
+    </div>
+    </div>
+</body>
